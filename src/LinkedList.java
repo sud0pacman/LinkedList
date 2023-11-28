@@ -20,7 +20,8 @@ public class LinkedList<Type> implements ListServices<Type> {
         ListNode<Type> newElement = new ListNode<>(element);
 
         if (tail == null) {
-            head = tail = newElement;
+            tail = newElement;
+            head = newElement;
         }
         else {
             tail.next = newElement;
