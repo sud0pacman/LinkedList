@@ -72,6 +72,8 @@ public class SinglyLinkedList {
             } else {
                 curr.next = curr.next.next;
             }
+
+            --size;
         }
     }
 
